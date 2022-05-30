@@ -1,0 +1,33 @@
+.wbselector {
+  border-radius: 10px;
+  box-sizing: border-box;
+  border-color: rgb(142, 141, 141);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1px solid;
+  height: 20vh;
+  box-shadow: 0 4px 50px 3px rgba(174, 174, 174, 0.56);
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.wbselector:hover {
+  box-shadow: 0 0 0 1px rgb(142, 141, 141);
+}
+
+.newWhite {
+  position: absolute;
+  bottom: 5%;
+}
+
+.icon {
+  height: 50%;
+  width: 50%;
+  flex: 0 1 auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
