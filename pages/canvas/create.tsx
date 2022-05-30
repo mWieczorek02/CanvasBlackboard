@@ -1,4 +1,3 @@
-import { LineConfig } from "konva/lib/shapes/Line";
 import styles from "../../styles/Home.module.css";
 import { NextPage } from "next";
 import React, {
