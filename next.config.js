@@ -10,8 +10,14 @@ if (
   }/node_modules/canvas/build/Release:${process.env.LD_LIBRARY_PATH || ''}`;
 }
 
-const nextConfig = {
-  reactStrictMode: true,
-}
+const withTM = require('next-transpile-modules')(['react-konva']);
 
-module.exports = nextConfig
+module.exports = withTM({
+  reactStrictMode: true,
+})
+
+// const nextConfig = {
+  
+// }
+
+// module.exports = nextConfig
