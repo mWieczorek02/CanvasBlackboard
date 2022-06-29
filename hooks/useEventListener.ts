@@ -1,11 +1,4 @@
-import React, {
-  useRef,
-  useEffect,
-  MutableRefObject,
-  useCallback,
-  useState,
-  RefObject,
-} from "react";
+import React, { useRef, useEffect, RefObject } from "react";
 
 export function useEventListener<
   T extends HTMLElement = HTMLDivElement,

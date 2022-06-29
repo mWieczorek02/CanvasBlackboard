@@ -4,13 +4,16 @@ import { WhiteboardSelector } from "../components/WhiteboardSelector/WhiteboardS
 
 const canvas: NextPage = () => {
   return (
-    <>
-      <Container fluid>
-        <Row xs={10} md={3} className="p-10">
-          <WhiteboardSelector></WhiteboardSelector>
-        </Row>
-      </Container>
-    </>
+    <Container fluid>
+      <Row
+        xs={10}
+        md={3}
+        className="py-10 px-[20rem]"
+        suppressHydrationWarning={true}
+      >
+        <WhiteboardSelector></WhiteboardSelector>
+      </Row>
+    </Container>
   );
 };
 

@@ -37,8 +37,6 @@ export const Toolbar: React.FC<ToolbarType> = ({
         setStrokeWidth={setStrokeWidth}
         setTool={setTool}
       />
-
-      <Button>Colors</Button>
     </ButtonGroup>
   );
 };

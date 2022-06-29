@@ -12,9 +12,12 @@
   justify-content: flex-end;
   align-items: center;
   position: relative;
+  margin-right: 5vw;
+  margin-bottom: 5vw;
 }
 
 .wbselector:hover {
+  transition: 0.1s;
   box-shadow: 0 0 0 1px rgb(142, 141, 141);
 }
 

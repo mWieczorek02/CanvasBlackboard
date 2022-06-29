@@ -17,7 +17,6 @@ export const PageNavbar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/canvas">Blackboard</Nav.Link>
-              <Nav.Link href="/link">FTP browser</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
