@@ -64,9 +64,8 @@ const ToolbarButton: React.FC<ToolbarButtonType> = ({
             <Form.Label>Stroke Width</Form.Label>
             <Form.Range
               onBlur={() => setShow(false)}
-              onChange={(e: any) => {
-                console.log(e);
-                setStrokeWidth(e.target.value);
+              onChange={(e) => {
+                setStrokeWidth(+e.target.value);
               }}
               value={strokeWidth}
             />

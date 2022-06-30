@@ -10,7 +10,14 @@ import React, {
   useContext,
   SyntheticEvent,
 } from "react";
-import { Stage, Layer, Line, Text, KonvaNodeComponent } from "react-konva";
+import {
+  Stage,
+  Layer,
+  Line,
+  Text,
+  KonvaNodeComponent,
+  StageProps,
+} from "react-konva";
 import { Toolbar } from "../../components/toolbar/Toolbar";
 import { useEventListener } from "../../hooks/useEventListener";
 import Image from "../../components/image/Image";
@@ -32,7 +39,7 @@ const Create: NextPage = () => {
   const [isPanning, setPanning] = useState<boolean>(false);
   const [color, setColor] = useState<string>("#FFFFFF");
   const [strokeWidth, setStrokeWidth] = useState<number>(3);
-  const stage = useRef<any>(null);
+  const stage = useRef(null);
   const [drag, setDrag] = useState(false);
 
   const isDrawing = useRef<boolean>(false);
@@ -107,7 +114,6 @@ const Create: NextPage = () => {
   };
 
   const drawLines = useMemo(() => {
-    console.log("rerendered");
     return elements.map((line, i) =>
       "tool" in line ? (
         <Line

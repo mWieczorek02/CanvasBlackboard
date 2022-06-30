@@ -4,7 +4,7 @@ export const useLocalStorage = <Type = string>(
   key: string,
   defaultValue?: Type
 ) => {
-  const [firstValue, setFirstValue] = useState<any>(() => {
+  const [firstValue, setFirstValue] = useState(() => {
     try {
       const value = window.localStorage.getItem(key);
 

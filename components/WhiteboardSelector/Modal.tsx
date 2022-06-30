@@ -30,9 +30,8 @@ export const ModalComponent: React.FC<{
         <Button
           variant="primary"
           onClick={() => {
-            console.log(1);
             if (buttonRef.current == null) return;
-            console.log(2);
+
             setName(buttonRef.current.value);
             setValue({ ...value, [buttonRef.current.value]: [] });
             router.push(`/canvas/${buttonRef.current.value}`);

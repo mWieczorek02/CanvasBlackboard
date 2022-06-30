@@ -14,7 +14,7 @@ const Image: React.FC<{
   url: string;
 }> = ({ setDrag, url }) => {
   const imageRef = useRef(null);
-  const transformerRef = useRef<any>(null);
+  const transformerRef = useRef(null);
   const [select, setSelect] = useState(false);
 
   const [image] = useImage(url);
