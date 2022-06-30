@@ -1,4 +1,4 @@
-## CanvasWhiteboard
+## CanvasBlackboard
 
 A webapp that allows to paint and paste images on a canvas. It saves the canvas in users local storage. Application written with next.js and konva.js library. 
 
